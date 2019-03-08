@@ -1,0 +1,52 @@
+﻿<html>
+<head>
+ <title>Otools - observable tools example </title>
+ <link rel="stylesheet" href="otools.css">
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+</head>
+
+<script type="text/javascript" src="otools.js"></script>
+
+<script language="Javascript"> 
+  var pack = new oArray() ;
+
+  class Background extends Panel {
+    constructor() {
+      super( null, "ot-main-panel" ) ;
+      this.x    = 10 ;
+      this.y    = 10 ;
+    }
+    render() {
+      this.elem.setAttribute( 'style', 
+                              'top: ' + this.y + 'px; ' +
+                              'left: ' + this.x + 'px; ' +
+                              'width: calc(100% - 20px) ; ' +
+                              'height: calc(100% - 20px) ; ' 
+                            ) ;
+    }
+  }
+
+  class Tile extends Draggable( Panel ) {
+    constructor( parent_ ) {
+      super( parent_, "ot-tile" ) ;
+      this.cx = 20 ;
+      this.cy = 20 ;
+      this.x  = rbetween( 10, 400 ) ;
+      this.y  = rbetween( 10, 400 ) ;
+    }
+  }
+
+  function init() {
+    var bg = new Background() ;
+    pack.push( bg ) ;
+    pack.push( new Tile( bg ) ) ;    
+    pack.push( new Tile( bg ) ) ;    
+    pack.push( new Tile( bg ) ) ;    
+  }
+
+  window.onload = init ;
+</script>
+
+<body class="ot-main-body">
+</body>
+</html>

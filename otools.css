@@ -1,0 +1,30 @@
+.ot-main-body {
+  background-color: rgba(34, 39, 51, 0.75);
+  color: #ACC6FC ;
+}
+
+.ot-main-panel {
+  position: absolute ;
+  left: 10px ;
+  top: 10px ;
+  width: calc(100% - 20px) ;
+  height: calc(100% - 20px) ;
+  color: white ;
+  background-color: rgba(19, 250, 21, 0.25);
+  z-index: 0 ;
+}
+
+.ot-tile {
+  position: absolute ;
+  background-color: rgba(220, 25, 21, 0.25);
+  border: solid 1px #3C455A !important ;
+}
+
+.oc-panel-button:hover,
+.oc-panel-button:active,
+.oc-panel-button:focus {
+  color: white ;
+  text-decoration: none !important;
+  outline: 0;
+  border: 0;
+}
