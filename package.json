@@ -1,0 +1,16 @@
+{
+  "name": "otools",
+  "version": "1.0.0",
+  "description": "",
+  "main": "otools.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "stenn@solidice.com:/home/git/otools.git"
+  },
+  "keywords": [],
+  "author": "Robert McInnis",
+  "license": "ISC"
+}
